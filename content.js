@@ -3,10 +3,10 @@ document.addEventListener('click', (e) => {
   const img = document.createElement('img');
   
   // Obtener la ruta real de la imagen dentro de la extensión
-  img.src = chrome.runtime.getURL('capibara.png');
+  img.src = chrome.runtime.getURL('stitch.png');
   
   // Estilo para posicionarla donde hiciste clic
-  img.classList.add('capibara-click');
+  img.classList.add('stitch-click');
   img.style.left = `${e.pageX - 25}px`; // Centrar imagen (asumiendo 50px ancho)
   img.style.top = `${e.pageY - 25}px`;
   
