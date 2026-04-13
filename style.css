@@ -1,26 +1,13 @@
-.stitch-click {
+.capibara-click {
   position: absolute;
   width: 50px;
   height: auto;
-  z-index: 999999;
-  pointer-events: none;
-  animation: pop-and-fade 1.5s forwards; /* Dura o tempo que você colocou no JS */
+  z-index: 999999; /* Para que esté siempre arriba */
+  pointer-events: none; /* Para que no bloquee otros clics */
+  animation: pop 0.3s ease-out;
 }
 
-@keyframes pop-and-fade {
-  0% { 
-    transform: scale(0) rotate(-20deg); 
-    opacity: 0; 
-  }
-  20% { 
-    transform: scale(1.2) rotate(10deg); 
-    opacity: 1; 
-  }
-  80% { 
-    opacity: 1; 
-  }
-  100% { 
-    transform: scale(0.8) translateY(-20px); 
-    opacity: 0; 
-  }
+@keyframes pop {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
 }
