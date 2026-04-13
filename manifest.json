@@ -10,10 +10,8 @@
       "css": ["style.css"]
     }
   ],
-  "web_accessible_resources": [
-    {
-      "resources": ["stitch.png"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+"web_accessible_resources": [{
+    "resources": ["*.png"],
+    "matches": ["*://*/*"]
+  }]
 }
